@@ -7,19 +7,15 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Tic Tac Toe</h1>
-        
-        <label for="gameMode">Select Game Mode:</label>
-        <select id="gameMode" onchange="changeGameMode()">
-            <option value="player">Play with Player</option>
-            <option value="bot">Play against Bot</option>
-        </select>
-
-        <div id="scoreboard"></div>
+        <div id="scoreboard" class="scoreboard">
+            <p class="playerX">Player X: 0</p>
+            <p class="playerO">Player O: 0</p>
+        </div>
         <div id="board"></div>
         <script src="script.js"></script>
+        <script src="bot-strategy.js"></script>
     </body>
 </html>

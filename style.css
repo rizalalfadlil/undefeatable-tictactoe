@@ -10,9 +10,16 @@ body {
     justify-content: center;
     height: 100vh;
 }
+.player{
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin:  0px;
+}
 .current-player {
-    font-weight: bold;
-    color: #ff5733; /* Warna teks untuk pemain yang sedang bermain */
+    background-color: rgb(91, 102, 255);/* Warna teks untuk pemain yang sedang bermain */
+    color: white;
 }
 
 h1 {
@@ -21,8 +28,10 @@ h1 {
 }
 
 #scoreboard {
-    margin-top: 20px;
-    font-size: 1.2em;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    font-size: 1em;
     color: #555;
 }
 
